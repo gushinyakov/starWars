@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">StarWars</string>
+    <string name="star_nwars">Star\nWars</string>
+
+
+    <string name="yoda">Yoda</string>
+    <string name="darth_vader">Darth Vader</string>
+    <string name="luke_skywalker">Luke Skywalker</string>
+
+    <string name="cylon_head">Cylon Head</string>
+    <string name="cylon_head_new">Cylon Head New</string>
+
+    <string name="c3po">C-3po</string>
+    <string name="r2d2">R2 D2</string>
+    <string name="asteroid">Asteroid</string>
+    <string name="astronaut">Astronaut</string>
+    <string name="launch">Launch</string>
+    <string name="planet">Planet</string>
+    <string name="star_wars">Star Wars</string>
+
+</resources>
