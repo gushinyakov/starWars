@@ -11,19 +11,29 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.eugenia.starwars.model.Hero;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.MyViewHolder> {
 
-    private int[] names;
-    private int[] imagesId;
+    private List<Hero> mHeroes = new ArrayList<>();
 
     private Listener listener;
     interface Listener {
         void onClick(int position);
     }
 
-    public HeroAdapter(int[] names, int[] imagesId) {
-        this.names = names;
-        this.imagesId = imagesId;
+
+    public void addHeroes(List<Hero> heroes) {
+        mHeroes.addAll(heroes);
+        notifyDataSetChanged();
+    }
+
+    public void clear() {
+        mHeroes.clear();
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -38,12 +48,9 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.MyViewHolder> 
     public void onBindViewHolder(@NonNull HeroAdapter.MyViewHolder myViewHolder, final int i) {
         final CardView cardView = myViewHolder.cardView;
 
+        Hero hero = mHeroes.get(i);
         TextView textView = cardView.findViewById(R.id.hero_name);
-        textView.setText(names[i]);
-
-        ImageView imageView = cardView.findViewById(R.id.hero_image);
-        imageView.setImageDrawable(ContextCompat.getDrawable(cardView.getContext(), imagesId[i]));
-        imageView.setContentDescription(textView.getText());
+        textView.setText(hero.getmName());
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +64,7 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.MyViewHolder> 
 
     @Override
     public int getItemCount() {
-        return names.length;
+        return mHeroes.size();
     }
 
     public void setListener(Listener listener){

@@ -18,7 +18,7 @@
             android:id="@+id/hero_image"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:src="@drawable/icons8_asteroid_48"/>
+            android:src="@drawable/icons8_luke_skywalker_48"/>
 
         <TextView
             android:id="@+id/hero_name"

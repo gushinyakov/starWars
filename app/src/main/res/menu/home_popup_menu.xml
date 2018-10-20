@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_button_change_status_loading"
+        android:title="@string/status_loading"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_button_change_status_empty"
+        android:title="@string/status_empty"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_button_change_status_content"
+        android:title="@string/status_content"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_button_change_status_error"
+        android:title="@string/status_error"
+        app:showAsAction="never"/>
+
+</menu>

@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:itemBackground">@color/colorAccent</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
     </style>
 
     <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
@@ -13,6 +15,12 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MyPopupMenu" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:itemBackground">@color/colorAccent</item>
     </style>
 
 </resources>

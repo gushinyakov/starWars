@@ -17,5 +17,10 @@
     <string name="launch">Launch</string>
     <string name="planet">Planet</string>
     <string name="star_wars">Star Wars</string>
+    <string name="status_loading">Status loading</string>
+    <string name="status_empty">Status empty</string>
+    <string name="status_content">Status content</string>
+    <string name="status_error">Status error</string>
+    <string name="change_status">Change Status</string>
 
 </resources>

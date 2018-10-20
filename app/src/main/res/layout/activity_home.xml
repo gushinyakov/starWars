@@ -7,11 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <!-- Loading status -->
+    <ProgressBar
+        android:id="@+id/status_home_loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/hero_recucler_view"
+        android:id="@+id/hero_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical">
+        android:scrollbars="vertical"
+        android:layoutAnimation="@anim/layout_animation_fall_down">
 
     </android.support.v7.widget.RecyclerView>
 
